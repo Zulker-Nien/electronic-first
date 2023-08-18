@@ -16,34 +16,34 @@ export const navigationBar = () => {
       <ul class="navbarContainer" id="navbarContainer">
         <li class="dropdown" data-dropdown="pc">
           <div class="dropdown-trigger">
-            <img src="./public/pc.webp"/>
+            <img src="/pc.webp"/>
             <p>PC</p>
             <i class="arrow down"></i>
           </div>
         </li>
         <li class="dropdown" data-dropdown="playstation">
           <div class="dropdown-trigger">
-            <img src="./public/ps.webp"/>
+            <img src="/ps.webp"/>
             <p>Playstation</p>
             <i class="arrow down"></i>
           </div>
         </li>
         <li class="dropdown" data-dropdown="xbox">
           <div class="dropdown-trigger">
-            <img src="./public/xbox.webp"/>
+            <img src="/xbox.webp"/>
             <p>Xbox</p>
             <i class="arrow down"></i>
           </div>
         </li>
         <li class="dropdown" data-dropdown="nintendo">
           <div class="dropdown-trigger">
-            <img src="./public/nintendo.webp"/>
+            <img src="/nintendo.webp"/>
             <p>Nintendo</p>
             <i class="arrow down"></i>
           </div>
         </li>
         <div class="searchBar">
-          <img src="./public/search.webp"/>
+          <img src="/search.webp"/>
         </div>
       </ul>
       <div id="dropdownMenu"/>

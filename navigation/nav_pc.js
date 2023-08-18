@@ -10,49 +10,49 @@ export const updateDropdownContent = `
                 <div class="bottomContent">
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/Steam.webp"/>
+                            <img src="/Steam.webp"/>
                         </div>
                         <div class="textContainer"><h4>Steam</h4></div>
                     </div>
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/Ubisoft.webp"/>
+                            <img src="/ubisoft.webp"/>
                         </div>
                         <div class="textContainer"><h4>Ubisoft Connect</h4></div>
                     </div>
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/ea.webp"/>
+                            <img src="/ea.webp"/>
                         </div>
                         <div class="textContainer"><h4>EA App</h4></div>
                     </div>
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/battlenet.webp"/>
+                            <img src="/battlenet.webp"/>
                         </div>
                         <div class="textContainer"><h4>Battle.net</h4></div>
                     </div>
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/rg.webp"/>
+                            <img src="/rg.webp"/>
                         </div>
                         <div class="textContainer"><h4>Rockstar</h4></div>
                     </div>
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/gog.webp"/>
+                            <img src="/gog.webp"/>
                         </div>
                         <div class="textContainer"><h4>GOG.com</h4></div>
                     </div>
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/ms.webp"/>
+                            <img src="/ms.webp"/>
                         </div>
                         <div class="textContainer"><h4>Microsoft Store</h4></div>
                     </div>
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/eg.webp"/>
+                            <img src="/eg.webp"/>
                         </div>
                         <div class="textContainer"><h4>Epic Games</h4></div>
                     </div>
@@ -66,19 +66,19 @@ export const updateDropdownContent = `
                 <div class="bottomContent">          
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/steam.webp"/>
+                            <img src="/Steam.webp"/>
                         </div>
                         <div class="textContainer"><h4>Steam Gift Cards</h4></div>
                     </div>
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/ms.webp"/>
+                            <img src="/ms.webp"/>
                         </div>
                         <div class="textContainer"><h4>Microsoft Gift Card</h4></div>
                     </div>
                     <div class="infoContainer">
                         <div class="logoContainer">
-                            <img src="./public/blizzard.webp"/>
+                            <img src="/blizzard.webp"/>
                         </div>
                         <div class="textContainer"><h4>Blizzard Gift Cards</h4></div>
                     </div>

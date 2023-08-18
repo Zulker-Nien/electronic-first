@@ -6,7 +6,7 @@ document.querySelector("#app").innerHTML = `
     <div class="headerSection">
       <div class="navigationContainer">
         <div class="logo">
-        <img src="./public/ef_logo.webp"/></div>
+        <img src="/ef_logo.webp"/></div>
         <div class="navigation">
           <nav class="topNavigation">
           <ul>
@@ -18,8 +18,8 @@ document.querySelector("#app").innerHTML = `
           <nav class="bottomNavigation" id="navigationBar">Bottom Nav</nav>
         </div>
         <div class="topButton">
-          <img src="./public/cart.webp"/>
-          <img src="./public/user.webp"/>
+          <img src="/cart.webp"/>
+          <img src="/user.webp"/>
         </div>
       </div>
       <div class="heroTextContainer">

@@ -1,0 +1,263 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  .headerSection {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    background-image: url("./public/header_BG.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    .navigationContainer {
+      width: 100%;
+      height: 10vh;
+      display: grid;
+      grid-template-columns: 10% 75% 10%;
+      column-gap: 2.5%;
+      .logo {
+        height: 6em;
+        padding: 1.5em;
+        will-change: filter;
+        transition: filter 300ms;
+      }
+      .logo:hover {
+        filter: drop-shadow(0 0 2em #646cffaa);
+      }
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #f7df1eaa);
+      }
+      .navigation {
+        display: grid;
+        grid-template-rows: 8% 90%;
+        row-gap: 2%;
+        .topNavigation {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 30%;
+          }
+          li {
+            padding: 2%;
+          }
+          li:hover {
+            color: #b0b0b0;
+            cursor: pointer;
+          }
+        }
+        .bottomNavigation {
+          //   THE MAIN STYLING IS IN A SEPARATE SCSS FILE.
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .topButton {
+        height: 10vh;
+        width: 10vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        filter: grayscale(100%);
+        img {
+          width: 20%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .navigation {
+          display: none;
+        }
+      }
+    }
+
+    .heroTextContainer {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-top: 2%;
+      padding: 0 10%;
+      color: #c5c5c5;
+      .countdown {
+        width: 30%;
+        padding: 0.5%;
+        background-color: #ffffff4e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        opacity: 0.8;
+        margin: 0;
+      }
+      h2 {
+        font-size: 2rem;
+        margin: 0;
+        width: 100%;
+        margin-top: 3%;
+        margin-bottom: 6%;
+        line-height: 30px;
+      }
+      .priceRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0;
+        .discountTag {
+          height: 5vh;
+          width: 30%;
+          clip-path: polygon(0 1%, 80% 1%, 100% 100%, 0% 100%);
+          bottom: 0;
+          border-radius: 5px;
+          background-color: #ff5400;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+          font-size: 1.5rem;
+          padding-right: 2%;
+          color: #d6d6d6;
+        }
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .heroTextContainer {
+        width: 80%;
+        color: #fff;
+        h2 {
+          font-size: 1.5rem;
+          padding: 5%;
+          background-color: #353535dc;
+        }
+      }
+    }
+  }
+  .trendingSection {
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    .trendingInformation {
+      width: 80%;
+      padding: 0 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #c5c5c5;
+      button {
+        border: 1px solid #c5c5c5;
+        width: 6%;
+        height: 70%;
+        border-radius: 5px;
+        font-size: 1rem;
+        background-color: #353535;
+        color: #c5c5c5;
+        transition: 0.3s background-color;
+      }
+      button:hover {
+        background-color: #c5c5c5;
+        color: #353535;
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 600px) {
+        button {
+          width: 30%;
+        }
+      }
+    }
+    .cardContainer {
+      width: 80%;
+      padding: 2.5% 10%;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      column-gap: 2.5%;
+      .cardWrapper {
+        width: 100%;
+        .card {
+          height: 30vh;
+          border-radius: 10px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          transition: 0.3s scale;
+          .discountTag {
+            position: absolute;
+            height: 5vh;
+            width: 8vh;
+            clip-path: polygon(0 1%, 80% 1%, 100% 100%, 0% 100%);
+            bottom: 0;
+            border-radius: 5px;
+            background-color: #ff5400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            padding-right: 2%;
+          }
+        }
+        .card:hover {
+          scale: 0.97;
+          cursor: pointer;
+        }
+        .card-0 {
+          background-image: url("./public/sengoku.webp");
+        }
+        .card-1 {
+          background-image: url("./public/sims_4.webp");
+        }
+        .card-2 {
+          background-image: url("./public/remnant_2.webp");
+        }
+
+        .cardInfo {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 2.5%;
+          color: #c5c5c5;
+        }
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .cardContainer {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}
